@@ -47,7 +47,9 @@ a {
 .hamburger {
   display: none;
 }
+
 /* Formato del menu hamburguesa */
+
 .bar {
   display: block;
   width: 25px;
@@ -84,8 +86,6 @@ a {
 
 .nav-logo {
   font-weight: 100;
-  /* color: white; */
-  /* font-family: 'Lucida Sans'; */
   font-family: "menrit";
   padding: .5rem .9rem;
   border-radius: .5rem .8rem;
@@ -125,8 +125,7 @@ a {
   }
   .nav-item {
     margin: 5rem 4rem;
-    padding: .4rem .8rem;
-  
+   padding: .4rem .8rem;
   }
   .nav-link {
     position: relative;
@@ -137,7 +136,7 @@ a {
   }
 }
 
-/* Animacion del boton hamburguesa cerrar menu */
+/* Animacion del boton hamburguesa al cerrar menu */
 
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;
