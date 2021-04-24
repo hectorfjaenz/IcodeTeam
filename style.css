@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 
 li {
   list-style: none;
+  text-decoration: none;
 }
 
 a {
@@ -98,8 +99,6 @@ a {
 
 .nav-logo:hover {
   background-color: var(--colorHover);
-  padding: .5rem .8rem;
-  border-radius: .5rem .8rem;
 }
 
 /* Version mobil */
@@ -125,7 +124,7 @@ a {
   }
   .nav-item {
     margin: 5rem 4rem;
-   padding: .4rem .8rem;
+    padding: .4rem .8rem;
   }
   .nav-link {
     position: relative;
