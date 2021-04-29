@@ -3,11 +3,13 @@
   --fontPrincipal: "Lato", sans-serif;
   --fontSecundaria: "Merriweather", serif;
   /* sujetos a cambios xd */
-  --colorPrincipal: black;
-  --colorHover: #3664F4;
+  --colorPrincipal: #391f67;
+  --colorHover: #3664f4;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -17,10 +19,15 @@ html {
   font-size: 62.5%;
   font-family: "Lato", sans-serif;
   /* scroll-behavior: smooth; */
-  background-color: #1b80d3;
+  background-color: #f27200;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 2.5rem;
 }
 
@@ -40,7 +47,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: var(--colorPrincipal)
+  background-color: var(--colorPrincipal);
 }
 
 /* Menu Hamburguesa */
@@ -66,16 +73,17 @@ a {
   align-items: center;
 }
 
+/*
 .nav-item:hover {
   background-color: var(--colorHover);
-}
+}*/
 
 .nav-item {
   margin-left: 5rem;
   margin-right: 15px;
   justify-content: space-between;
-  padding: .5rem .8rem;
-  border-radius: .5rem .8rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem 0.8rem;
   font-style: var(--fontPrincipal);
 }
 
@@ -88,18 +96,18 @@ a {
 .nav-logo {
   font-weight: 100;
   font-family: "menrit";
-  padding: .5rem .9rem;
-  border-radius: .5rem .8rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.5rem 0.8rem;
   cursor: pointer;
   width: 100px;
   height: 40px;
 }
 
 /* hover del logo */
-
+/*
 .nav-logo:hover {
   background-color: var(--colorHover);
-}
+}*/
 
 /* Version mobil */
 
@@ -124,7 +132,7 @@ a {
   }
   .nav-item {
     margin: 5rem 4rem;
-    padding: .4rem .8rem;
+    padding: 0.4rem 0.8rem;
   }
   .nav-link {
     position: relative;
