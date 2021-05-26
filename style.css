@@ -1,18 +1,13 @@
 :root {
   /**Aqui van a ir las variables*/
-<<<<<<< HEAD
   --fontPrincipal: "Monserrat", sans-serif;
   --fontSecundaria: "Lato", sans-serif;
   --input-color: #808688;
   --second-color: #f27700;
   --border-color: #dadce0;
-=======
-  --fontPrincipal: "Lato", sans-serif;
-  --fontSecundaria: "Merriweather", serif;
   /* sujetos a cambios xd */
   --colorPrincipal: #391f67;
   --colorHover: #3664f4;
->>>>>>> menu
 }
 
 *,
@@ -39,7 +34,6 @@ h6 {
   font-size: 2.5rem;
 }
 
-<<<<<<< HEAD
 .row {
   display: flex;
   flex-direction: column;
@@ -49,6 +43,15 @@ h6 {
 
 body {
   background-color: #fff;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .main-container {
@@ -250,14 +253,6 @@ body {
   color: #fff;
   border-radius: 0.5rem;
   cursor: pointer;
-=======
-li {
-  list-style: none;
-  text-decoration: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 /* Navbar  */
@@ -375,5 +370,4 @@ a {
 
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
->>>>>>> menu
 }
