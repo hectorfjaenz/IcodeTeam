@@ -1,10 +1,18 @@
 :root {
   /**Aqui van a ir las variables*/
+<<<<<<< HEAD
   --fontPrincipal: "Monserrat", sans-serif;
   --fontSecundaria: "Lato", sans-serif;
   --input-color: #808688;
   --second-color: #f27700;
   --border-color: #dadce0;
+=======
+  --fontPrincipal: "Lato", sans-serif;
+  --fontSecundaria: "Merriweather", serif;
+  /* sujetos a cambios xd */
+  --colorPrincipal: #391f67;
+  --colorHover: #3664f4;
+>>>>>>> menu
 }
 
 *,
@@ -18,6 +26,8 @@
 html {
   font-size: 62.5%;
   font-family: "Lato", sans-serif;
+  /* scroll-behavior: smooth; */
+  background-color: #f27200;
 }
 
 h1,
@@ -29,6 +39,7 @@ h6 {
   font-size: 2.5rem;
 }
 
+<<<<<<< HEAD
 .row {
   display: flex;
   flex-direction: column;
@@ -239,4 +250,130 @@ body {
   color: #fff;
   border-radius: 0.5rem;
   cursor: pointer;
+=======
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar  */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--colorPrincipal);
+}
+
+/* Menu Hamburguesa */
+
+.hamburger {
+  display: none;
+}
+
+/* Formato del menu hamburguesa */
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*
+.nav-item:hover {
+  background-color: var(--colorHover);
+}*/
+
+.nav-item {
+  margin-left: 5rem;
+  margin-right: 15px;
+  justify-content: space-between;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem 0.8rem;
+  font-style: var(--fontPrincipal);
+}
+
+.nav-link {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: white;
+}
+
+.nav-logo {
+  font-weight: 100;
+  font-family: "menrit";
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.5rem 0.8rem;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+}
+
+/* hover del logo */
+/*
+.nav-logo:hover {
+  background-color: var(--colorHover);
+}*/
+
+/* Version mobil */
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: var(--colorPrincipal);
+    width: 100%;
+    height: 100%;
+    border-radius: none;
+    text-align: center;
+    transition: 0.3s;
+    padding: 1.5rem 0;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.5);
+  }
+  .nav-menu.active {
+    left: 0;
+    height: 100%;
+  }
+  .nav-item {
+    margin: 5rem 4rem;
+    padding: 0.4rem 0.8rem;
+  }
+  .nav-link {
+    position: relative;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+/* Animacion del boton hamburguesa al cerrar menu */
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+>>>>>>> menu
 }
