@@ -226,6 +226,7 @@ body {
   font-weight: bold;
   font-size: 3rem;
   color: rgb(43, 41, 41);
+  text-align: center;
 }
 
 .email-link {
@@ -234,7 +235,7 @@ body {
   border: none;
   font-size: 1.5rem;
   padding: 1.5rem 4rem;
-  background-color: var(--first-color);
+  background-color: var(--second-color);
   color: #fff;
   border-radius: 0.5rem;
   cursor: pointer;
