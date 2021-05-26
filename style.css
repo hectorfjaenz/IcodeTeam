@@ -1,7 +1,7 @@
 :root {
   /**Aqui van a ir las variables*/
-  --fontPrincipal: "Lato", sans-serif;
-  --fontSecundaria: "Merriweather", serif;
+  --fontPrincipal: "Monserrat", sans-serif;
+  --fontSecundaria: "Lato", sans-serif;
 }
 
 *,
@@ -24,4 +24,63 @@ h4,
 h5,
 h6 {
   font-size: 2.5rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+body {
+  background-color: #fff;
+}
+
+.main-container {
+  width: 100%;
+  /*background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);*/
+}
+
+.col-main1,
+.col-main2 {
+  width: 100%;
+}
+
+.col-main1 {
+  padding: 2rem 2rem 0;
+}
+
+.main-title {
+  color: #f27700;
+  font-weight: 900;
+  font-size: 3rem;
+  padding: 4rem 4rem 0;
+}
+
+.main-text {
+  color: #1d1b19;
+  font-size: 1.9rem;
+  padding: 2rem 4rem;
+}
+
+.img-programmer {
+  padding: 4rem 4rem 0;
+  max-width: 100%;
+}
+
+.btn {
+  margin-left: 4rem;
+  padding: 1rem 2rem;
+  background-color: #f27700;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.main-btn {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
 }
