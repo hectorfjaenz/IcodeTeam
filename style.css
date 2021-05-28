@@ -5,9 +5,11 @@
   --input-color: #808688;
   --second-color: #f27700;
   --border-color: #dadce0;
+  --whiteColor:#fff;
   /* sujetos a cambios xd */
   --colorPrincipal: #391f67;
   --colorHover: #3664f4;
+ 
 }
 
 *,
@@ -405,3 +407,99 @@ a {
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
+
+/* start => Plans Prices */
+.plans{
+  width: 100%;  
+  height: 500px;
+  padding-bottom: 30px;
+  background: var(--whiteColor); 
+  
+}
+.plans-card{
+  height: 450px;
+  padding-top: 20px;
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+  scroll-snap-type: x proximity;
+}
+.plans-card--content{
+  background-color: #f5f7fa;
+  scroll-snap-align: center;
+  min-width: 230px;
+  max-width: 340px;
+  padding: 0 15px;
+  margin-right: 7px;
+  margin-left: 7px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(89, 73,30,0.16);  
+  text-align: center;
+ 
+}
+.plans-card--tittle{
+  line-height: 1.5rem; 
+  padding-top: 1.4rem;
+  padding-bottom: 1.8rem;
+}
+.plans-card--price{
+  display: flex;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: bold; 
+  line-height: 3.5rem;
+}
+.plans-card--price span{
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-top: -12px;
+  margin-right: 4px;
+}
+.plans-card--details{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+ padding-top: 6px;
+ padding-bottom: 6px;
+}
+.plans-card--details p{
+  font-size: 1.2rem;
+  padding: 5px;
+  margin: 0 20px;
+}
+
+.icon--list{
+  display: inline-block;
+  width: 25px;
+  height: 23px;
+  margin-right: 2px;
+  background-image: url("./img/check_circle.svg");
+}
+button.plans-ca{
+  font-family: var(--fontSecundaria);
+  font-size: 1.7rem;
+  margin: 0;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  color:var(--whiteColor);
+}
+.plans-ca .bx{
+ margin-left: 3px;
+ vertical-align: text-bottom;
+}
+.plans-ca:hover{
+ color:#000
+}
+@media (min-width: 1070px) {
+
+  .plans-card{   
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y: hidden;
+    margin: 5px;
+  }
+	.plans-card--content{
+    margin-right: 5px;
+    margin-left: 5px;   
+  }
+}
+/* End => Plans Prices */
