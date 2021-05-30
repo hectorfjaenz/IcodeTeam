@@ -376,14 +376,11 @@ a {
 /* estilos de la seccion servicios */
 
 .services-section {
-  /* 
-    background: url(bg.jpg); */
-    background-image: linear-gradient(to top, rgba(6, 3, 26, 0.5) 0%, rgba(12, 1, 9, 0.5) 100%), url(./bg.jpg);
-    background-size: cover;
-    background-position: center;
+    background-image: linear-gradient(to top, rgba(2, 0, 12, 0.5) 0%, rgba(15, 3, 13, 0.5) 100%),url(./bg.jpg);
+    background-size: cover; 
+    background-position: center; 
     background-attachment: fixed;
-    padding: 60px 0;
-    
+    padding: 60px 0; 
   }
   
   .inner-width {
@@ -397,14 +394,14 @@ a {
   .section-title {
     text-align: center;
     color: #ddd;
-    font-size: 30px;
+    font-size: 24px;
   }
   
   .border {
     width: 160px;
     height: 2px;
     background: #ec830b;
-    margin: 40px auto;
+    margin: 40px auto ;
   }
   
   .services-container {
@@ -427,10 +424,10 @@ a {
     display: inline-block;
     width: 70px;
     height: 70px;
-    border: 3px solid #ec830b;
+    border: 2px solid #ec830b;
     margin-bottom: 50px;
     margin-top: 16px;
-    transition: 0,3 linear; 
+    transition: 0,2.5 linear; 
   }
   
   .service-box:hover .service-icon {
@@ -440,29 +437,38 @@ a {
   }
   /* fin del cuadrado */
   
+  /* tamaño de icono i */
   .service-icon i{
     line-height: 70px;
-    font-size: 28px;
+    font-size: 22px;
   }
   
   .service-title {
-    font-size: 18px;
+    font-size: 21px;
     margin-bottom: 10px;
   }
-  
-  .service-desc {
-    font-size: 22px;
+
+  .services-desc{
+    font-size: 14px;
   }
   
   @media screen and(max-width:960){
     .service-box {
       max-width: 45%;
     }
+
+    .services-section{
+      max-width: auto;
+    }
   }
   
   @media screen and(max-width:768){
     .service-box {
-      max-width: 50%;
+      max-width: auto;
+    }
+
+    .services-section{
+      max-width: auto;
     }
   }
   
@@ -470,6 +476,10 @@ a {
     .service-box {
       max-width: 100%;
     }
+    .services-section{
+      max-width: auto;
+    }
+    
   }
   
   /* termina la seccion servicios */
