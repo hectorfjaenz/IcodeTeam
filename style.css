@@ -516,15 +516,34 @@ a {
     }
   }
   
-  @media screen and(max-width:480){
+  /* @media screen and(max-width:480){
     .service-box {
       max-width: 100%;
     }
     .services-section{
       max-width: auto;
     }
+  
     
-  }
+  } */
+
+  @media only screen and (min-width:320px) and (max-width:480px){
+    .service-box {
+      max-width: 50%;
+    }
+    .services-section{
+      max-width: auto;
+    }
+
+    .service-title {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+  
+    .services-desc {
+      font-size: 18px;
+    }
+   }
   
   /* termina la seccion servicios */
   
