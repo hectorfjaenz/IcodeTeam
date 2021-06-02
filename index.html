@@ -41,7 +41,7 @@
             <a href="#" class="nav-link">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Servicios</a>
+            <a href="#Servicios" class="nav-link">Servicios</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">Contacto</a>
@@ -55,12 +55,14 @@
         </div>
       </nav>
     </header>
+
     <main class="main-container">
       <div class="row">
         <div class="col-main1">
           <h1 class="main-title">Diseño & desarrollo de sitios web</h1>
           <p class="main-text">
-            Somos Icode un equipo enfocado en crear tu presencia en la web
+            Ayudamos a los negocios a colocar su marca o producto en la web,
+            creando productos acordes a su identidad, únicos y personalizados.
           </p>
           <button class="btn">
             <a href="#" class="main-btn">Contactanos</a>
@@ -75,10 +77,13 @@
         </div>
       </div>
     </main>
+
+    <!--* SECCION SECUNDARIA -->
+
     <section class="seccion-secundaria">
       <div class="row">
         <div class="col-seccion1">
-          <h2 class="seccion-title">Lorem, ipsum.</h2>
+          <h2 class="seccion-title">Acerca de nosotros</h2>
           <p class="seccion-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nisi
             maiores veniam repellat, facere expedita.
@@ -88,10 +93,89 @@
           <img class="img-work" src="./img/work.svg" alt="work" />
         </div>
       </div>
+    </section>  
+    <!--*Seccion Servicios-->
+
+    <section class="services-section" id="Servicios">
+      <!-- <div class="services-section"> -->
+      <div class="inner-width">
+        <h1 class="section-title">Nuestros Servicios</h1>
+        <div class="border"></div>
+        <div class="services-container">
+          <!-- Contenedores de servicos -->
+
+          <div class="service-box">
+            <div class="service-icon">
+              <i class="bx bx-laptop"></i>
+            </div>
+            <div class="service-title">Diseño Web</div>
+            <div class="services-desc">
+              Creamos sitios webs con creatividad y deacuerdo a las ultimas
+              tendencias.
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+              <i class="bx bx-mobile"></i>
+            </div>
+            <div class="service-title">Diseño Responsivo</div>
+            <div class="services-desc">
+              Su sitio web se adaptará a todas las pantallas de computadoras,
+              laptop, tablets y fispositivos moviles
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+              <i class="bx bxs-videos"></i>
+            </div>
+            <div class="service-title">Diseño Gráfico y Publicidad</div>
+            <div class="services-desc">
+              El 95% de los usuarios sigue a una marca en redes sociales. Dale a
+              tu marca el impulso que necesita con nosotros
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+              <i class="bx bx-server"></i>
+            </div>
+            <div class="service-title">Hosting</div>
+            <div class="services-desc">
+              Alojamos tu web en servidores seguros, veloces y de alto
+              rendimiento
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+              <i class="bx bx-world"></i>
+            </div>
+            <div class="service-title">Dominio</div>
+            <div class="services-desc">
+              Realizamos el registro de tu dominio según el nombre con el cual
+              los clientes lo puedan recordar con facilidad
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+              <i class="bx bx-search-alt"></i>
+            </div>
+            <div class="service-title">Posicionamiento SEO</div>
+            <div class="services-desc">
+              Ser el primero en las busquedas es primordial a llegar a tus
+              clientes, nosotros te ayudamos a posicionarte
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section></section>
+
     <!-- Inicio Seccion de planes -->
     <section class="plans">
+      <h2 >Nuestros Planes</h2>
       <div class="row plans-card">
         <div class="plans-card--content">
           <h3 class="plans-card--tittle">Plan Basico</h3>
@@ -125,7 +209,7 @@
           <h3 class="plans-card--tittle">Plan Pro</h3>
           <p class="plans-card--price"><span>$</span>350</p>
           <div class="plans-card--details">
-            <p><span class="icon--list"></span> Diseño de 6 paginas por sitio</p>
+            <p><span class="icon--list"></span> Diseño de 12 paginas por sitio</p>
             <p><span class="icon--list"></span> Diseño Web Responsive</p>
             <p><span class="icon--list"></span> 12 Correos electronicos</p>
             <p><span class="icon--list"></span> Integración de redes sociales</p>
@@ -138,6 +222,8 @@
       </div>
     </section>
     <!-- Fin Seccion de planes -->
+
+    <!--*FORMULARIO-->
     <section class="formulario">
       <div class="form-container">
         <form
@@ -145,7 +231,7 @@
           action="https://formsubmit.co/hectorfjaenz@gmail.com"
           method="POST"
         >
-          <h1 class="form-title">Contactanos</h1>
+          <h1 class="form-title">¡Contáctanos, trabajemos juntos!</h1>
           <div class="form-div">
             <input
               class="form-input"
@@ -186,7 +272,27 @@
         </form>
       </div>
     </section>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container grid grid-3">
+        <div>
+          <h3>Icode</h3>
+          <p>Copyright &copy; 2021</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+          </ul>
+        </nav>
+        <div class="social">
+          <a href="#"><i class="bx bxl-facebook bx-md"></i></a>
+          <a href="#"><i class="bx bxl-twitter bx-md"></i></a>
+          <a href="#"><i class="bx bxl-instagram-alt bx-md"></i></a>
+        </div>
+      </div>
+    </footer>
+
     <script src="./app.js"></script>
   </body>
 </html>
