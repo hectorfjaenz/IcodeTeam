@@ -494,10 +494,10 @@ a {
 .plans-card--content .plans-ca{
   font-family: var(--fontSecundaria);
   font-size: 1.7rem;
-  margin: auto;
-  margin-right: auto;
-  margin-top: 1.2rem;
+  margin-top: 1.2rem;  
+  margin-right: auto;  
   margin-bottom: 1.2rem;
+  margin-left: auto;
   color:var(--whiteColor);
   cursor: pointer;
 }
@@ -507,6 +507,21 @@ a {
 }
 .plans-ca:hover{
  color:#000;
+}
+@media (min-width: 820px){
+  .plans h2{
+    font-size: 3rem;
+  }
+  .plans-card{ 
+    overflow-y: hidden;
+    overscroll-behavior: unset;
+  }
+
+}
+@media (min-width:870px){
+  .plans-card--content .plans-ca{
+    margin-left: 4.5rem;
+  }
 }
 @media (min-width: 1070px) {
 
@@ -523,17 +538,11 @@ a {
     padding: 0 15px;
 
   }
+  .plans-card--content .plans-ca{
+    margin-left: auto;
+  }
 }
-@media (min-width: 820px){
-  .plans h2{
-    font-size: 3rem;
-  }
-  .plans-card{ 
-    overflow-y: hidden;
-    overscroll-behavior: unset;
-  }
 
-}
 /* End => Plans Prices */
 /* estilos de la seccion servicios */
 
