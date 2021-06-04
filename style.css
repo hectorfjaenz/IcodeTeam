@@ -5,12 +5,7 @@
   --input-color: #808688;
   --colorPrincipal: #f27700;
   --border-color: #dadce0;
-  --whiteColor:#fff;
-  /* sujetos a cambios xd */
-  --colorPrincipal: #391f67;
-  --colorHover: #3664f4;
- 
-  --whiteColor: #fff;
+  --whiteColor:#fff;  
   --color-secundario: #391f67;
 }
 
@@ -511,7 +506,7 @@ a {
  vertical-align: text-bottom;
 }
 .plans-ca:hover{
- color:#f27700;
+ color:#000;
 }
 @media (min-width: 1070px) {
 
