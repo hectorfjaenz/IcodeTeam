@@ -35,16 +35,16 @@
         <!-- Menu -->
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="#" class="nav-link">Inicio</a>
+            <a href="/" class="nav-link">Inicio</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Nosotros</a>
+            <a href="#nosotros" class="nav-link">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a href="#Servicios" class="nav-link">Servicios</a>
+            <a href="#servicios" class="nav-link">Servicios</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Contacto</a>
+            <a href="#contacto" class="nav-link">Contacto</a>
           </li>
         </ul>
         <!-- Menu hamburguesa -->
@@ -61,11 +61,12 @@
         <div class="col-main1">
           <h1 class="main-title">Diseño & desarrollo de sitios web</h1>
           <p class="main-text">
-            Ayudamos a los negocios a colocar su marca o producto en la web,
-            creando productos acordes a su identidad, únicos y personalizados.
+            Ayudamos a los negocios a colocar su marca o producto en la web o
+            redes sociales, creando productos acordes a su identidad, únicos y
+            personalizados.
           </p>
           <button class="btn">
-            <a href="#" class="main-btn">Contactanos</a>
+            <a href="#contacto" class="main-btn">Contáctanos</a>
           </button>
         </div>
         <div class="col-main2">
@@ -80,8 +81,8 @@
 
     <!--* SECCION SECUNDARIA -->
 
-    <section class="seccion-secundaria">
-      <div class="row">
+    <section class="seccion-secundaria" id="nosotros">
+      <div class="row2">
         <div class="col-seccion1">
           <h2 class="seccion-title">Acerca de nosotros</h2>
           <p class="seccion-text">
@@ -97,7 +98,7 @@
 
     <!--*Seccion Servicios-->
 
-    <section class="services-section" id="Servicios">
+    <section class="services-section" id="servicios">
       <!-- <div class="services-section"> -->
       <div class="inner-width">
         <h1 class="section-title">Nuestros Servicios</h1>
@@ -175,20 +176,21 @@
     </section>
 
     <!--*FORMULARIO-->
-    <section class="formulario">
+    <section class="formulario" id="contacto">
       <div class="form-container">
         <form
+          id="formulario"
           class="form"
           action="https://formsubmit.co/hectorfjaenz@gmail.com"
           method="POST"
         >
           <h1 class="form-title">¡Contáctanos, trabajemos juntos!</h1>
-          <div class="form-div">
+          <div class="form-div" id="div-input-nombre">
             <input
+              id="nombre"
               class="form-input"
               type="text"
-              name="text"
-              required
+              name="nombre"
               placeholder=" "
               autocomplete="off"
             />
@@ -196,28 +198,45 @@
           </div>
           <input type="hidden" name="_next" value="thanks.html" />
 
-          <div class="form-div">
+          <div class="form-div" id="div-input-email">
             <input
+              id="email"
               class="form-input"
               type="email"
               name="email"
-              required
               placeholder=" "
               autocomplete="off"
             />
             <label for="text" class="form-label">Email</label>
           </div>
 
+          <div class="form-div" id="div-input-telefono">
+            <input
+              id="telefono"
+              class="form-input"
+              type="text"
+              name="telefono"
+              placeholder=" "
+              autocomplete="off"
+            />
+            <label for="text" class="form-label">Telefono</label>
+          </div>
+
           <div class="form-div-textarea">
             <textarea
+              id="textarea"
               name="message"
               class="form-textarea"
               placeholder="Mensaje..."
-              required
             ></textarea>
           </div>
 
-          <button type="submit" class="form-button" value="Enviar">
+          <button
+            id="btnsubmit"
+            type="submit"
+            class="form-button"
+            value="Enviar"
+          >
             Enviar
           </button>
         </form>
@@ -244,6 +263,7 @@
       </div>
     </footer>
 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./app.js"></script>
   </body>
 </html>
