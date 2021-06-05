@@ -418,6 +418,128 @@ a {
   transform: translateY(-8px) rotate(-45deg);
 }
 
+/* start => Plans Prices */
+.plans {
+  width: 100%;
+  height: 500px;
+  padding-bottom: 3rem;
+  background: var(--whiteColor);
+}
+.plans h2 {
+  color: var(--colorPrincipal);
+  font-weight: 900;
+  font-size: 2.4rem;
+  text-align: center;
+  padding-top: 1rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+.plans-card {
+  height: 450px;
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+  scroll-snap-type: x proximity;
+}
+.plans-card--content {
+  background-color: #f5f7fa;
+  scroll-snap-align: center;
+  min-width: 230px;
+  max-width: 340px;
+  padding: 0 1rem;
+  margin-right: 7px;
+  margin-left: 7px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  text-align: center;
+}
+.plans-card--tittle {
+  line-height: 1.5rem;
+  padding-top: 1.4rem;
+  padding-bottom: 1.8rem;
+}
+.plans-card--price {
+  display: flex;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 3.5rem;
+}
+.plans-card--price span {
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-top: -12px;
+  margin-right: 4px;
+}
+.plans-card--details {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.plans-card--details p {
+  font-size: 1.2rem;
+  padding: 5px;
+  margin: 0 20px;
+}
+
+.icon--list {
+  display: inline-block;
+  width: 25px;
+  height: 23px;
+  margin-right: 2px;
+  background-image: url("./img/check_circle.svg");
+}
+.plans-card--content .plans-ca {
+  font-family: var(--fontSecundaria);
+  font-size: 1.7rem;
+  margin-top: 1.2rem;
+  margin-right: auto;
+  margin-bottom: 1.2rem;
+  margin-left: auto;
+  color: var(--whiteColor);
+  cursor: pointer;
+}
+.plans-ca .bx {
+  margin-left: 3px;
+  vertical-align: text-bottom;
+}
+.plans-ca:hover {
+  color: #000;
+}
+@media (min-width: 820px) {
+  .plans h2 {
+    font-size: 3rem;
+  }
+  .plans-card {
+    overflow-y: hidden;
+    overscroll-behavior: unset;
+  }
+}
+@media (min-width: 870px) {
+  .plans-card--content .plans-ca {
+    margin-left: 4.5rem;
+  }
+}
+@media (min-width: 1070px) {
+  .plans-card {
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .plans-card--content {
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 0 15px;
+  }
+  .plans-card--content .plans-ca {
+    margin-left: auto;
+  }
+}
+
+/* End => Plans Prices */
 /* estilos de la seccion servicios */
 
 .services-section {
@@ -516,7 +638,6 @@ a {
   .service-box {
     max-width: auto;
   }
-
   .services-section {
     max-width: auto;
   }
@@ -532,6 +653,91 @@ a {
 }
 
 /** termina la seccion servicios */
+
+/* cuadrado */
+
+.service-icon {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #ec830b;
+  margin-bottom: 50px;
+  margin-top: 16px;
+  transition: 0, 2.5 linear;
+}
+
+.service-box:hover .service-icon {
+  background: #ec830b;
+
+  color: #ddd;
+}
+/* fin del cuadrado */
+
+/* tamaño de icono i */
+.service-icon i {
+  line-height: 70px;
+  font-size: 22px;
+}
+
+.service-title {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.services-desc {
+  font-size: 14px;
+}
+
+@media screen and(max-width:960) {
+  .service-box {
+    max-width: 45%;
+  }
+
+  .services-section {
+    max-width: auto;
+  }
+}
+
+@media screen and(max-width:768) {
+  .service-box {
+    max-width: auto;
+  }
+
+  .services-section {
+    max-width: auto;
+  }
+}
+
+/* @media screen and(max-width:480){
+    .service-box {
+      max-width: 100%;
+    }
+    .services-section{
+      max-width: auto;
+    }
+  
+    
+  } */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .service-box {
+    max-width: 50%;
+  }
+  .services-section {
+    max-width: auto;
+  }
+
+  .service-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .services-desc {
+    font-size: 18px;
+  }
+}
+
+/* termina la seccion servicios */
 
 /**FOOTER*/
 .footer {
