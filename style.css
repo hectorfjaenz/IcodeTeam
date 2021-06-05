@@ -422,7 +422,8 @@ a {
 .plans {
   width: 100%;
   height: 500px;
-  padding-bottom: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
   background: var(--whiteColor);
 }
 .plans h2 {
@@ -433,6 +434,7 @@ a {
   padding-top: 1rem;
   padding-right: 3rem;
   padding-left: 3rem;
+  margin-bottom: 1rem;
 }
 .plans-card {
   height: 450px;
@@ -511,9 +513,14 @@ a {
   .plans h2 {
     font-size: 3rem;
   }
+  .plans-card--content{
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
   .plans-card {
     overflow-y: hidden;
     overscroll-behavior: unset;
+   
   }
 }
 @media (min-width: 870px) {
@@ -522,7 +529,7 @@ a {
   }
 }
 @media (min-width: 1070px) {
-  .plans-card {
+  .plans .plans-card {
     justify-content: space-evenly;
     align-items: center;
     margin-right: 5px;
